@@ -1,0 +1,200 @@
+
+body {
+  height: 100vh; /* Prendre toute la hauteur de la fenêtre */
+  margin: 0; /* Supprimer les marges par défaut */
+  /*padding: 20px;  Ajouter une marge interne pour éviter de coller avec les bords */
+  background-color: transparent;
+  overflow: hidden; /* Cacher la barre de défilement */
+}
+
+/* Header */
+header {
+  height: 80px;
+  background: linear-gradient(to bottom, darkorange, #fff);  
+  color: white;
+  display: flex; /* Aligner les éléments horizontalement */
+  align-items: center; /* Centrer les éléments verticalement */
+  justify-content: space-between; /* Espacer les éléments */
+  padding: 0 20px; /* Ajouter une marge interne aux côtés gauche et droit */
+}
+
+header h1 {
+  margin: 0;
+}
+
+header img {
+  padding: 20px;
+}
+
+/* Navigation : menus */
+nav {
+  align-items: center; /* Centrer les éléments verticalement */
+}
+
+nav#menu_haut a {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-weight: bold;
+  display: flex; /* Aligner les éléments horizontalement */
+}
+
+nav#menu_haut a {
+  margin-right: 15px; /* Espacer les éléments */
+}
+
+nav#menu_haut  a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 140px;
+}
+
+nav#menu_haut  a.actif,
+nav#menu_haut  a:hover {
+  background: linear-gradient(to top, darkorange, #fff);
+  color: #8b0000;
+}
+
+nav#menu_gauche {
+  vertical-align: top;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+ -top: 2px;
+}
+
+nav#menu_gauche h1 {
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 10px;
+}
+
+nav#menu_gauche a {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-weight: bold;
+}
+
+nav#menu_gauche  a {
+  text-decoration: none;
+  color: black;
+  padding: 0 230px;
+}
+
+nav#menu_gauche   a.active,
+nav#menu_gauche   a:hover {
+  background: linear-gradient(to top, darkorange, #fff);
+  color: #fff;
+}
+
+/* Section : partie principale */
+section {
+  width: calc(100% - 240px); /* Réduire la largeur de la section en tenant compte du menu gauche */
+  height: calc(80% - 140px); /* Réduire la hauteur de la section en tenant compte du header */
+  overflow: auto;
+  padding: 20px;
+  background-color: white;
+  margin: 20px;
+  margin-bottom:20px;
+}
+
+section.panier a.commander {
+  display: block;
+  margin-top: 40px;
+}
+
+section.panier a.viderPanier {
+  text-decoration: underline;
+  color: darkred;
+  cursor: pointer;
+}
+
+img {
+  border: none;
+}
+
+article {
+  padding: 30px;
+  border-bottom-style: inset;
+}
+
+aside {
+  display: inline-block;
+  vertical-align: top;
+}
+
+aside h1 {
+  color: lightslategray;
+  font-size: 18pt;
+  display: inline;
+  margin: 0;
+}
+
+aside a {
+  vertical-align: middle;
+}
+
+article img {
+  padding-right: 60px;
+  width: 150px;
+}
+
+section.panier article {
+  padding: 10px;
+  border-style: none;
+}
+
+section.panier article img {
+  width: 50px;
+}
+
+section.panier article p {
+  display: inline-block;
+  vertical-align: top;
+  width: 250px;
+}
+
+footer nav {
+  background-color: #ebebeb;
+  border: solid 1px #dedede;
+  width: 100%;
+}
+
+footer p {
+  color: #7b7b7b;
+  text-align: right;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+nav#menu_bas ul li {
+  display: inline-block;
+}
+
+nav#menu_bas ul li a {
+  text-decoration: none;
+  color: #7b7b7b;
+  cursor: pointer;
+  padding: 0 15px;
+}
+
+nav#menu_bas ul li a.actif,
+footer ul li a:hover {
+  color: #000;
+}
+
+a#resumePanier {
+  display: block;
+  text-decoration: none;
+  color: darkred;
+  cursor: pointer;
+  padding-bottom: 10px;
+  padding-left: 50px;
+
+}
+
+.message {
+      color: darkred;
+}
